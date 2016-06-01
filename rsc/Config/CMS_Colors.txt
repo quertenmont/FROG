@@ -1,0 +1,166 @@
+
+//////////////////////////////////////////////////////////
+////////               GENERAL STYLE              ////////
+//////////////////////////////////////////////////////////
+
+BackGround_Color  		= {0.0 , 0.0 , 0.0 , 1.0};                   // Black
+Txt_       Color  		= {1.0 , 1.0 , 1.0 , 1.0};                   // Black
+ZAxis     _Color  		= {1.0 , 0.5 , 1.0 , 0.3};                   // 
+ZAxis _Thickness  		= 3.0;
+XAxis_Color       		= {0.0 , 0.0 , 0.0 , 0.0};                   // Transparent
+YAxis_Color       		= {0.0 , 0.0 , 0.0 , 0.0};                   // Transparent
+
+//////////////////////////////////////////////////////////
+////////              GEOMETRY STYLE              ////////
+//////////////////////////////////////////////////////////
+
+Id_10000000_Color   		= {1.0 , 1.0 , 1.0 , 1.0};                   // ALL 
+Id_10000000_Thickness     	= 3.0;                                       // ALL 
+
+
+Id_16000000_Color   		= {0.6 , 0.6 , 0.6 , 1.0};                   // Magnet 
+
+Id_11000000_Color   		= {1.0 , 0.0 , 1.0 , 1.0};                   // Tracker 
+Id_11000000_ShowDet 		= true;                                      // Display Module Edges 
+Id_11100000_Color   		= {0.08, 0.57, 0.50, 1.0};                   // PIB
+Id_11100000_DisplayMode 	= 1;    		                             // PIB IS A PIXEL DETECTOR
+Id_11200000_Color  		= {0.06, 0.44, 0.38, 1.0};                   // PIE
+Id_11200000_DisplayMode 	= 1;    		                             // PIE IS A PIXEL DETECTOR
+Id_11300000_Color  		= {0.08, 0.57, 0.32, 1.0};                   // TIB
+Id_11400000_Color  		= {0.06, 0.44, 0.25, 1.0};                   // TID
+Id_11500000_Color   		= {0.08, 0.58, 0.44, 1.0};                   // TOB
+Id_11600000_Color   		= {0.08, 0.58, 0.44, 1.0};                   // TEC
+
+Id_12000000_Color   		= {1.0 , 0.0 , 0.0 , 1.0};                   // Muon System
+Id_12000000_ShowDet 		= true;                                      // Not Display Module Edges 
+Id_12100000_Color   		= {0.25, 0.00, 0.00, 1.0};                   // DT
+Id_12200000_Color   		= {0.25, 0.02, 0.00, 1.0};                   // CSC
+Id_12300000_Color   		= {0.20, 0.0 , 0.02, 1.0};                   // RPC
+
+
+Id_13000000_Color   		= {1.0 , 1.0 , 0.0 , 1.0};                   // ECAL 
+Id_13000000_ShowDet 		= false;                                     // Not Display Module Edges 
+Id_13100000_Color   		= {0.75, 0.70, 0.46, 1.0};                   // EB
+Id_13200000_Color   		= {0.70, 0.68, 0.44, 1.0};                   // EE
+Id_13300000_Color   		= {0.70, 0.78, 0.40, 1.0};                   // ES
+
+Id_14000000_Color   		= {0.0 , 1.0 , 1.0 , 1.0};                   // HCAL 
+Id_14000000_ShowDet 		= false;                                     // Not Display Module Edges 
+Id_14100000_Color   		= {0.30, 0.48, 0.53, 1.0};                   // HB
+Id_14200000_Color   		= {0.23, 0.40, 0.44, 1.0};                   // HE
+Id_14300000_Color   		= {0.18, 0.34, 0.37, 1.0};                   // HO
+Id_14400000_Color   		= {0.20, 0.04, 0.04, 1.0};                   // HF
+
+Id_15000000_Color   		= {0.40, 0.58, 0.63, 1.0};                   // CALO 
+Id_15000000_ShowDet 		= false;                                     // Not Display Module Edges 
+Id_15100000_Color   		= {0.40, 0.58, 0.63, 1.0};                   // CALO TOWERS
+
+
+//////////////////////////////////////////////////////////
+////////                EVENT STYLE               ////////
+//////////////////////////////////////////////////////////
+
+Id_21000000_Color          = { 1.0 , 0.0 , 1.0 , 1.0 };                 // SIM
+
+Id_29100000_Color          = { 0.4 , 0.8 , 1.0 , 1.0 };                 // GenParticles
+
+Id_21100000_Color          = { 0.0 , 1.0 , 0.0 , 1.0 };                 // SimTracks
+Id_21100000_Thickness      = 2;                                         // SimTracks
+
+Id_21200000_Color          = { 0.0 , 1.0 , 1.0 , 1.0 };                 // SimHits
+Id_21200000_MarkerSize     = 8;                                         // SimHits
+
+Id_21300000_Color          = { 0.0 , 1.0 , 0.0 , 1.0 };                 // SimVertex
+Id_21300000_Marker         = 6;                                         // SimVertex
+Id_21300000_MarkerSize     = 9;                                         // SimVertex
+
+Id_22110000_Color          = { 0.8 , 0.8 , 1.0 , 1.0 };                 // SiPixelClusters
+Id_22110000_Thickness      = 0;                                         // SiPixelClusters
+Id_22110000_MarkerSize     = 5;                                         // SiPixelClusters
+Id_22110000_ShowDet        = false;                                     // SiPixelClusters
+
+Id_22120000_Color          = { 1.0 , 1.0 , 0.0 , 1.0 };                 // SiStripClusters
+Id_22120000_Thickness      = 1;                                         // SiStripClusters
+Id_22120000_MarkerSize     = 5;                                         // SiStripClusters
+Id_22120000_ShowDet        = false;                                     // SiStripClusters
+   
+Id_22200000_Color          = { 0.5 , 1.0 , 0.5 , 1.0 };                 // Ecal RecHits
+Id_22200000_ShowDet        = false;                                     // Ecal RecHits
+
+Id_22300000_Color          = { 0.0 , 0.0 , 1.0 , 1.0 };                 // Hcal RecHits
+Id_22300000_ShowDet        = false;                                     // Hcal RecHits
+
+Id_22500000_Color          = { 1.0 , 1.0 , 0.0 , 1.0 };                 // DT+CSC Muon Segments
+Id_22500000_Thickness      = 5;                                         // DT+CSC Muon Segments
+Id_22400000_Color          = { 0.7 , 0.7 , 1.0 , 1.0 };                 // RPC Muon Hits
+Id_22400000_Thickness      = 3;                                         // RPC Muon Hits
+Id_22400000_Marker         = 4;                                         // RPC Muon Hits
+Id_22400000_MarkerSize     = 9;                                         // RPC Muon Hits
+
+Id_23300000_Color          = { 0.4 , 0.8 , 0.4 , 1.0 };                 // ALL CaloTowers
+Id_23300000_ShowDet        = false;                                     // ALL CaloTowers
+Id_23300000_DisplayMode    = 0;
+
+Id_23200000_Color          = { 1.0 , 0.5 , 0.1 , 1.0 };                 // ALL RecoVertex
+Id_23200000_Marker         = 6;                                         // ALL RecoVertex
+Id_23200000_MarkerSize     = 6;                                         // ALL RecoVertex
+
+Id_23100000_Color          = { 0.7 , 0.7 , 1.0 , 1.0 };                 // ALL RecoTracks
+Id_23100000_Thickness      = 1.5;                                       // ALL RecoTracks
+Id_23100000_MarkerSize     = 4;                                         // ALL RecoTracks
+Id_23100000_ShowDet        = false;                                     // ALL RecoTracks 
+Id_23100000_DisplayMode    = 2;                                         // ALL RecoTracks Display the Hits
+Id_23100000_Interpolation  = true;                                      // ALL RecoTracks Interpollation
+Id_23100001_Color          = { 1.0 , 0.9 , 0.1 , 1.0 };                 // General Tracks
+Id_23100001_MarkerSize     = 0;                                         // ALL RecoTracks
+Id_23100001_Thickness      = 1.0;
+Id_23100004_Thickness      = 4.0;
+
+Id_24100000_Color          = { 0.6 , 0.6 , 0.6 , 1.0 };                 // ALL RecoJets
+Id_24100000_ShowDet        = false;                                     // Not Display The jet Cone
+Id_24130000_Color          = { 1.0 , 1.0 , 1.0 , 1.0 };                 // ALL CaloJets
+Id_24130001_Color          = { 1.0 , 1.0 , 0.0 , 1.0 };                 // CaloJets 1
+Id_24130001_Jet_1_Color    = { 1.0 , 0.0 , 0.0 , 1.0 };                 // CaloJets 1 1st    Jet
+Id_24130001_Jet_2_Color    = { 0.0 , 0.0 , 1.0 , 1.0 };                 // CaloJets 1 2nd    Jet
+//Id_24130001_Jet_3_Color    = { 0.0 , 1.0 , 0.0 , 1.0 };                 //     CaloJets 1 3rd    Jet
+//Id_24130001_Jet_4_Color    = { 1.0 , 0.0 , 1.0 , 1.0 };                 //     CaloJets 1 4th    Jet
+//Id_24130001_Jet_5_Color    = { 0.0 , 1.0 , 1.0 , 1.0 };                 //     CaloJets 1 5th    Jet
+//Id_24130001_Jet_6_Color    = { 1.0 , 1.0 , 1.0 , 1.0 };                 //     CaloJets 1 6th    Jet
+//Id_24130001_Jet_8_Color    = { 1.0 , 0.0 , 0.0 , 1.0 };                 //     CaloJets 1 1st    Jet
+//Id_24130001_Jet_9_Color    = { 0.0 , 0.0 , 1.0 , 1.0 };                 //     CaloJets 1 2nd    Jet
+//Id_24130001_Jet_10_Color   = { 0.0 , 1.0 , 0.0 , 1.0 };                 //     CaloJets 1 3rd    Jet
+//Id_24130001_Jet_11_Color   = { 1.0 , 0.5 , 0.0 , 1.0 };                 //     CaloJets 1 4th    Jet
+//Id_24130001_Jet_12_Color   = { 0.0 , 0.5 , 1.0 , 1.0 };                 //     CaloJets 1 5th    Jet
+//Id_24130001_Jet_13_Color   = { 1.0 , 0.5 , 1.0 , 1.0 };                 //     CaloJets 1 6th    Jet
+
+Id_24140000_Color          = { 0.7 , 0.7 , 1.0 , 1.0 };                 // ALL TrackJets
+Id_24140001_Color          = { 1.0 , 1.0 , 0.0 , 1.0 };                 // TrackJets 1
+Id_24140001_Jet_1_Color    = { 1.0 , 0.0 , 0.0 , 1.0 };                 // TrackJets 1 1st    Jet
+Id_24140001_Jet_2_Color    = { 0.0 , 0.0 , 1.0 , 1.0 };                 // TrackJets 1 2nd    Jet
+
+Id_24200000_Color          = { 0.0 , 1.0 , 0.0 , 1.0 };                 // ALL RecoCandidates
+Id_24210000_Color          = { 0.0 , 1.0 , 1.0 , 1.0 };                 // ALL RecoCaloMET
+
+Id_24400000_Thickness      = 4.0;					// ALL Photons
+Id_24400000_Color          = { 1.0 , 0.55 , 0.05 , 1.0 };		// ALL Photons
+
+Id_24500000_Thickness      = 4.0;					// ALL Electrons
+Id_24500000_Color          = { 1.0 , 0.55 , 0.05 , 1.0 };		// ALL Electrons
+Id_24500000_PtMin          = 3.0;
+
+//////////////////////////////////////////////////////////
+////////          GEN PARTICLES STYLE             ////////
+//////////////////////////////////////////////////////////
+
+GenParticle_PdgId_22_Color    = { 0.6 , 0.6 , 0.0 , 1.0 };              // Photon
+GenParticle_PdgId_211_Color   = { 1.0 , 0.0 , 0.0 , 1.0 };              // Pion
+GenParticle_PdgId_2212_Color  = { 0.0 , 0.0 , 1.0 , 1.0 };              // Proton
+
+//////////////////////////////////////////////////////////
+////////              SIMTRACKS STYLE             ////////
+//////////////////////////////////////////////////////////
+
+SimTrack_Charge_0_Color    = { 1.0 , 1.0 , 0.0 , 1.0 };                 // Neutral
+SimTrack_Charge_+_Color    = { 0.0 , 0.0 , 1.0 , 1.0 };                 // Charged Particles
+SimTrack_Charge_-_Color    = { 1.0 , 0.0 , 0.0 , 1.0 };                 // Charged Particles
+//SimTrack_Charge_+_Thickness= 1;                                       // Charged Particles

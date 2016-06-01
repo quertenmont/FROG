@@ -1,0 +1,68 @@
+// Contains Thresholds definitions
+#Include = Config/CMS_Thresholds.txt;
+
+// Contains Colors definitions
+#Include = Config/CMS_Colors.txt;
+
+// Contains Views configurations
+#Include = Config/CMS_Views.txt;
+
+// Input file containing the geometry data
+InputGeom = {QCD_3000to3500.vis.gz};
+
+// Input file containing the event data
+InputVisFile = {http://www.fynu.ucl.ac.be/users/l.quertenmont/TEMP/FrogHiggs/HiggsCandidates_8TeV.vis};
+
+// Logo and text to be overlayed on the top right corner
+ColabLogo    = "/rsc/CMSLogo.png";
+OverlayText  = "CMS Experiment at the LHC, CERN\n%T\nRun %R Event %E\nC.O.M Energy 8.0TeV\nH>ZZ>4µ candidate";
+
+// Current event number  (deprecated)
+//Event_Number = 0;  // set to -1, in order to always display the lastest event of the latest file
+//Event_Time   = -1; //3;  // automatic event changing every Event_Time Sec (if Event_Time>0)
+//File_Time    = -1; //60;  // re-download the .vis file every <File_Time> Sec (if File_Time>0)
+
+// List of detector parts that should be visible at starup
+GeomToDisplay = { 0,
+//	  12100000,
+};
+
+// List of events part that should be visible at starup
+EventToDisplay = {   0
+//		     ,29100000  // GenParticles
+
+//               ,21100000  // Sim Track
+//               ,21200000  // Sim Hit
+//               ,21300000  // Sim Vertex
+
+//               ,22110000  // SiPixel Clusters
+//               ,22120000  // SiStrip Clusters
+
+               ,22200000  // ECAL Hits EB + EE +ES
+               ,22300000  // HCAL Hits HBHE + HO +HF
+                 ,22400000  // Muon Hits RPC
+                 ,22500000  // Muon Segments DT + CSC
+
+               ,23200000  // All RecoVertices 
+//             ,23300000  // All CaloTowers
+               ,23100000  // All RecoTracks
+//             ,23100001  // All RecoTracks
+
+
+//                 ,24130000  // All RecoJets
+//                 ,24210000  // All RecoMET
+//               ,24300000  // All RecoCandidates
+};
+
+
+// Screenshot Resolution
+ScreenShot_Width  = 1920;
+ScreenShot_Height = 1080;
+
+// 3D-Stereoscopic Options
+Stereoscopy             = true;
+Stereoscopy_Anaglyph    = false;
+Stereoscopy_EyeDistance = 3.0;
+
+// Detector map
+//DetValueMapFile = "http://frog.hepforge.org/click/Downloads/jfrog/Gain.txt";

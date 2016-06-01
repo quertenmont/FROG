@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp codebase="" href="">
+  <information>
+    <title>FROG java</title>
+    <vendor>Loic Quertenmont</vendor>
+    <offline-allowed/>
+    <association mime-type="application-x/jfrog-file" extensions="jfrog"/> 
+    <association mime-type="application-x/vis-file" extensions="vis"/> 
+    <association mime-type="application-x/vis-file" extensions="vis.gz"/> 
+    <association mime-type="application-x/geom-file" extensions="geom"/> 
+    <association mime-type="application-x/geom-file" extensions="geom.gz"/> 
+  </information>
+
+  <security> 
+     <all-permissions/>
+  </security> 
+
+  <update check="background" policy="always"/>
+    <resources>
+      <j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+"/>
+      <extension name="jogl-all-awt" href="http://jogamp.org/deployment/jogamp-current/jogl-all-awt.jnlp" />
+      <jar href="jfrog.jar" main="true"/>
+    </resources>
+  <application-desc main-class="jfrog.Displayer">
+   <argument>NotFirstUIActionOnProcess</argument> 
+  </application-desc>
+</jnlp>

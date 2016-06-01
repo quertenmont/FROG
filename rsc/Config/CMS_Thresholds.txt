@@ -1,0 +1,35 @@
+//////////////////////////////////////////////////////////
+////////              TRESHOLDS & CUTS            ////////
+//////////////////////////////////////////////////////////
+
+Id_21100000_PtMin          = 0.0;//5;                                       // SimTracks
+
+Id_13100000_EMin           = 0.45;                                      // EB
+Id_13200000_EMin           = 1.50;                                       // EE
+Id_13300000_EMin           = 0.0015;                                    // ES
+Id_14100000_EMin           = 3.0;                                       // HB
+Id_14200000_EMin           = 3.0;                                       // HE
+//Id_14300000_EMin           = 1.5;                                       // HO
+Id_14300000_EMin           = 2.5;                                       // HO
+Id_14400000_EMin           = 9.0;                                       // HF
+
+Id_23300000_EMin           = 0.2;                                       // CaloTowers
+Id_24100000_EMin           = 0.0;                                       // RecoJets ALL
+Id_24100000_PtMin          = 0.1;                                       // RecoJets ALL
+
+Id_23100001_PtMin          = 1.0;							   // GeneralTracks
+
+Id_22120000_EMin           = 100.0; //MinADCounts for a SiStripCluster	// SiStripClusters
+
+
+//////////////////////////////////////////////////////////
+////////          SIMTRACKS PROPAGATION           ////////
+//////////////////////////////////////////////////////////
+
+SimTrack_MaxIt             = 500000;                                    // Maximum Number of itteration during the propagation
+                                                                        // Usefull for low Pt track (Helix).
+SimTrack_MinSegLength      = 20;                                        // Minimum size of displayed simTrack segments
+                                                                        // Small number improves details, but decrease speed
+SimTrack_BField            = {0.0 , 0.0 , 3.8};                         // The magnetic Field used for the propagation (in Tesla).
+
+

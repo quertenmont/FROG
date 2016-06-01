@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project JFrog with Jar-in-Jar Loader">
+	<!-- to build the key simply do: "keytool -genkey -alias frog -keystore jfrog.jks -validity 999"  -->	
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+    	<echo message="Ant version used: ${ant.version}"/>
+    	
+    	<echo message="Make main FROG jar"/>
+		     
+		<copy todir="bin/src"><fileset dir="src"/></copy>    	    	
+		<!-- <copy todir="bin/utils" file="frogant.xml" /> -->  
+		<copy todir="bin/utils" file="jfrog.jks" />    	
+		<copy todir="bin/utils" file="frogant.xml" />    	
+		<copy todir="bin/utils" file="jfrog_web.jnlp" />
+		<copy todir="bin/utils" file="jfrog.jnlp" />
+		<copy todir="bin/utils" file=".project" />			
+		<copy todir="bin/utils" file=".classpath" />    	
+        <jar destfile="jfrog.jar">
+            <manifest>
+            	<attribute name="Main-Class" value="jfrog.Displayer"/>
+            	<attribute name="Ant-Version" value="${ant.version}"/> 
+            	<attribute name="Created-By" value="JDK ${java.version} (${java.vendor})"/>
+            	<attribute name="Codebase" value="*"/>
+            	<attribute name="Permissions" value="all-permissions"/>
+            	<attribute name="Application-Library-Allowable-Codebase" value="*"/>
+            	<attribute name="Application-Name" value="jFROG"/>
+            </manifest>
+        	<fileset dir="bin/"  />        	        	
+        </jar>
+	    <signjar jar="jfrog.jar" alias="frog"  keystore="jfrog.jks" storepass="javafrog"/>
+    	<delete dir="bin/src"/>
+    	<delete dir="bin/utils"/>    	    	   	    	
+    </target>	
+</project>

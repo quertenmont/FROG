@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp codebase="http://www.fynu.ucl.ac.be/users/l.quertenmont/jFROG/" href="">
+  <information>
+    <title>FROG java (web)</title>
+    <vendor>Loic Quertenmont</vendor>
+    <homepage href="http://projects.hepforge.org/frog/"/>
+    <description>jFROG (3.00)</description>
+    <description kind="short">A demo of the capabilities of the java version of FROG </description>
+    <icon href="Frog_Logo.jpg" />
+    <icon kind="splash" href="Frog_Logo.jpg" />
+    <shortcut online="false">
+      <desktop/>
+      <menu submenu="Frog"/>
+    </shortcut>
+    <offline-allowed/>
+    <association mime-type="application-x/vis-file" extensions="vis"/> 
+    <association mime-type="application-x/geom-file" extensions="geom"/> 
+    <association mime-type="application-x/jfrog-file" extensions="jfrog"/> 
+  </information>
+
+  <security> 
+     <all-permissions/>
+  </security> 
+
+  <update check="timeout" policy="always"/>
+    <resources>
+      <j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+" />
+      <extension name="jogl-all-awt" href="http://jogamp.org/deployment/jogamp-current/jogl-all-awt.jnlp" />
+      <jar href="http://www.fynu.ucl.ac.be/users/l.quertenmont/jFROG/jfrog.jar" main="true" />
+    </resources>
+  <application-desc main-class="jfrog.Displayer">
+  </application-desc>
+</jnlp>
