@@ -29,7 +29,7 @@
         	<fileset dir="bin/"  />        	        	
         </jar>
 	    <signjar jar="jfrog.jar" alias="frog"  keystore="jfrog.jks" storepass="javafrog"/>
-    	<delete dir="bin/src"/>
-    	<delete dir="bin/utils"/>    	    	   	    	
+<!--    	<delete dir="bin/src"/> -->
+<!--    	<delete dir="bin/utils"/> -->    	    	   	    	
     </target>	
 </project>
