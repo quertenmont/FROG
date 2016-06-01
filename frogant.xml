@@ -7,9 +7,10 @@
     	<echo message="Ant version used: ${ant.version}"/>
     	
     	<echo message="Make main FROG jar"/>
-		     
-		<copy todir="bin/src"><fileset dir="src"/></copy>    	    	
-		<!-- <copy todir="bin/utils" file="frogant.xml" /> -->  
+    	<delete dir="bin/rsc"/>		     
+		<copy todir="bin/src"><fileset dir="src"/></copy>
+	    <copy todir="bin/rsc"><fileset dir="rsc"/></copy>    	
+		<!-- <copy todir="bin/utils" file="frogant.xml" /> -->    	
 		<copy todir="bin/utils" file="jfrog.jks" />    	
 		<copy todir="bin/utils" file="frogant.xml" />    	
 		<copy todir="bin/utils" file="jfrog_web.jnlp" />
@@ -29,7 +30,7 @@
         	<fileset dir="bin/"  />        	        	
         </jar>
 	    <signjar jar="jfrog.jar" alias="frog"  keystore="jfrog.jks" storepass="javafrog"/>
-<!--    	<delete dir="bin/src"/> -->
-<!--    	<delete dir="bin/utils"/> -->    	    	   	    	
+    	<delete dir="bin/src"/> 
+    	<delete dir="bin/utils"/>    	    	   	    	
     </target>	
 </project>
