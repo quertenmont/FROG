@@ -8,14 +8,14 @@
 #Include = Config/CMS_Views.txt;
 
 // Input file containing the geometry data
-InputGeom = {QCD_3000to3500.vis.gz};
+InputGeom = {http://frog.hepforge.org/click/Downloads/Vis/CMS/CMS.geom.gz};
 
 // Input file containing the event data
-InputVisFile = {http://www.fynu.ucl.ac.be/users/l.quertenmont/TEMP/FrogHiggs/HiggsCandidates_8TeV.vis};
+InputVisFile = {http://frog.hepforge.org/click/Downloads/Vis/CMS/QCD_3000to3500.vis.gz};
 
 // Logo and text to be overlayed on the top right corner
 ColabLogo    = "/rsc/CMSLogo.png";
-OverlayText  = "CMS Experiment at the LHC, CERN\n%T\nRun %R Event %E\nC.O.M Energy 8.0TeV\nH>ZZ>4µ candidate";
+OverlayText  = "CMS Experiment at the LHC, CERN\n%T\nRun %R Event %E";
 
 // Current event number  (deprecated)
 //Event_Number = 0;  // set to -1, in order to always display the lastest event of the latest file
@@ -24,7 +24,7 @@ OverlayText  = "CMS Experiment at the LHC, CERN\n%T\nRun %R Event %E\nC.O.M Ener
 
 // List of detector parts that should be visible at starup
 GeomToDisplay = { 0,
-//	  12100000,
+	  12100000,
 };
 
 // List of events part that should be visible at starup
@@ -60,7 +60,7 @@ ScreenShot_Width  = 1920;
 ScreenShot_Height = 1080;
 
 // 3D-Stereoscopic Options
-Stereoscopy             = true;
+Stereoscopy             = false;
 Stereoscopy_Anaglyph    = false;
 Stereoscopy_EyeDistance = 3.0;
 
