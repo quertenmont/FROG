@@ -7,7 +7,7 @@
     	<echo message="Ant version used: ${ant.version}"/>
     	
     	<echo message="Make main FROG jar"/>
-    	<delete dir="bin/rsc"/>		     
+<!--    	<delete dir="bin/rsc"/> -->		     
 		<copy todir="bin/src"><fileset dir="src"/></copy>
 	    <copy todir="bin/rsc"><fileset dir="rsc"/></copy>    	
 		<!-- <copy todir="bin/utils" file="frogant.xml" /> -->    	
@@ -31,7 +31,7 @@
         	<zipfileset src="jogamp-fat.jar" includes="**/*.class,**/*.png,**/*.glsl,**/*.vp,**/*.fp,**/*.bvp,**/*.bfp,**/*.so,**/*.jnilib,**/*.dylib,**/*.dll,**/*.bin,**/*.defl"/> 
         </jar>
 	    <signjar jar="jfrog.jar" alias="frog"  keystore="jfrog.jks" storepass="javafrog"/>
-    	<delete dir="bin/src"/> 
-    	<delete dir="bin/utils"/>    	    	   	    	
+<!--    	<delete dir="bin/src"/> --> 
+<!--    	<delete dir="bin/utils"/>  -->    	    	   	    	
     </target>	
 </project>

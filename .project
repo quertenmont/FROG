@@ -14,6 +14,13 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>jogamp-fat.jar</name>
+			<type>1</type>
+			<location>D:/Documents/Phd_Thesis/2012_01_10_FROG_3_0_0/GITHUB/displayer/jFrog/jogamp-fat.jar</location>
+		</link>
+	</linkedResources>
 	<variableList>
 		<variable>
 			<name>JAVA_HOME</name>
