@@ -27,7 +27,8 @@
             	<attribute name="Application-Library-Allowable-Codebase" value="*"/>
             	<attribute name="Application-Name" value="jFROG"/>
             </manifest>
-        	<fileset dir="bin/"  />        	        	
+        	<fileset dir="bin/"  />
+        	<zipfileset src="jogamp-fat.jar" includes="**/*.class,**/*.png,**/*.glsl,**/*.vp,**/*.fp,**/*.bvp,**/*.bfp,**/*.so,**/*.jnilib,**/*.dylib,**/*.dll,**/*.bin,**/*.defl"/> 
         </jar>
 	    <signjar jar="jfrog.jar" alias="frog"  keystore="jfrog.jks" storepass="javafrog"/>
     	<delete dir="bin/src"/> 

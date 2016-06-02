@@ -25,7 +25,7 @@
   <update check="timeout" policy="always"/>
     <resources>
       <j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+" />
-      <extension name="jogl-all-awt" href="http://jogamp.org/deployment/jogamp-current/jogl-all-awt.jnlp" />
+<!--      <extension name="jogl-all-awt" href="http://jogamp.org/deployment/jogamp-current/jogl-all-awt.jnlp" /> -->
       <jar href="https://github.com/quertenmont/FROG/raw/master/jfrog.jar" main="true" />
     </resources>
   <application-desc main-class="jfrog.Displayer">
